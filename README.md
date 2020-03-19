@@ -1,4 +1,4 @@
-# DsDojo &nbsp;[![GitHub release](https://img.shields.io/badge/Release-v1.0-green.svg?&colorA=024a70&?&colorB=0779b5)](https://github.com/Arpith-kumar/EmotionRecognition)&nbsp; [![All Contributors](https://img.shields.io/badge/all_contributors-2-orange.svg?style=flat-square)](https://github.com/Arpith-kumar/DsDojo/graphs/contributors)&nbsp; [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://github.com/Arpith-kumar/DsDojo/blob/master/LICENSE)
+# DsDojo &nbsp;[![GitHub release](https://img.shields.io/badge/Release-v1.0-green.svg?&colorA=024a70&?&colorB=0779b5)](https://github.com/Arpith-kumar/DsDojo)&nbsp; [![All Contributors](https://img.shields.io/badge/all_contributors-2-orange.svg?style=flat-square)](https://github.com/Arpith-kumar/DsDojo/graphs/contributors)&nbsp; [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://github.com/Arpith-kumar/DsDojo/blob/master/LICENSE.md)
 
 
 Data Structure and Algorithms Repository in Python 3.x for Competitive programming.
@@ -25,7 +25,7 @@ The current structure of this directory:
 
 ## :page_with_curl: License
 
-Distributed under the MIT License [**@Arpith S,  @Shashan Ram K Bhat**](LICENSE)
+Distributed under the MIT License [**@Arpith S,  @Shashan Ram K Bhat**](LICENSE.md)
 
 ## :nut_and_bolt: Built With:
 
