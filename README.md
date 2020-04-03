@@ -3,7 +3,7 @@
 
 Data Structure and Algorithms Repository in Python 3.x for Competitive programming.
 
-## :open_file_folder: Directory Structure :
+## :open_file_folder: Directory Structure:
 As of now, this repository contains only two main directories: [**Algorithms**](Algorithms) and
 [**Data Structures**](Data_Structures).
 
@@ -23,7 +23,7 @@ The current structure of this directory:
 1. [**Pattern Matching**](Algorithms/Pattern_Matching).
 2. [**Cycle Detection**](Algorithms/Cycle_Detection).
 
-## :page_with_curl: License
+## :page_with_curl: License:
 
 Distributed under the MIT License [**@Arpith S,  @Shashan Ram K Bhat**](LICENSE.md)
 
