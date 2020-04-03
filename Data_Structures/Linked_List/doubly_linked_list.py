@@ -1,3 +1,20 @@
+"""
+Description:
+    - A Doubly Linked List (DLL) contains an extra pointer, typically called previous pointer,
+      together with next pointer and data which are there in singly linked list.
+
+        first(head)              second                  third
+            |                       |                      |
+            |                       |                      |
+        +------+-----+        +------+-----+        +------+------+
+        | data |  o  |<------>| data |  o  |<------>| data | None |
+        +------+-----+        +------+-----+        +------+------+
+"""
+
+'''
+The SinglyLinkedListNode class defines the individual node in the linked list data structure.
+'''
+
 '''
 The DoublyLinkedListNode class defines the individual node in the linked list data structure.
 '''
@@ -23,7 +40,7 @@ class DoublyLinkedList:
     def __init__(self):
         # Start with the head node - the first node in a LinkedList is called a the Head Node.
         self.head = None
-    
+
     '''
     Inserts the values at the end of the LinkedList.
     '''
@@ -37,19 +54,17 @@ class DoublyLinkedList:
             new_node.prev = None
             self.head = new_node
         else:
-        # If atleast one node present
+            # If atleast one node present
             current_node = self.head
-            # Iterate to the last node of the list 
+            # Iterate to the last node of the list
             while current_node.next is not None:
                 current_node = current_node.next
-            # Point the current last node to the new last node 
+            # Point the current last node to the new last node
             current_node.next = new_node
             # Point the previous pointer of the new last node to the current last node.
             new_node.prev = current_node
             # Point the next pointer of the new last node to None.
             new_node.next = None
-            
-        
 
     '''
     Inserts the values at the beginning of the LinkedList.
@@ -64,7 +79,7 @@ class DoublyLinkedList:
             new_node.prev = None
             self.head = new_node
         else:
-        # If atleast one node present
+            # If atleast one node present
             # Point the new node's next pointer to the current head.
             new_node.next = self.head
             # Point the new nodes previous pointer to None.
@@ -73,7 +88,7 @@ class DoublyLinkedList:
             self.head.prev = new_node
             # Assign the new node as the new head.
             self.head = new_node
-    
+
     '''
     Finds the length of the LinkedList.
     '''
@@ -108,10 +123,9 @@ class DoublyLinkedList:
             self.append(element)
             return
         else:
-            # For ever other index value.
-            # current_node is the node after which the new element is to be added, next_node is the node that has to be
-            # present next to the new_node after insertion.
-            # First we identify the node after which we have to do the insertion, then we do some modifications in the connection
+            # For ever other index value. current_node is the node after which the new element is to be added,
+            # next_node is the node that has to be present next to the new_node after insertion. First we identify
+            # the node after which we have to do the insertion, then we do some modifications in the connection
             # between these nodes.
             while current_node is not None:
                 next_node = current_node.next
@@ -124,7 +138,7 @@ class DoublyLinkedList:
                 idx += 1
                 current_node = current_node.next
             return
-    
+
     '''
     Delete a value after the specified index.
     '''
@@ -139,7 +153,7 @@ class DoublyLinkedList:
 
         # If you want to delete the last node.
         if index == self.length() - 2:
-            # Iterrate to the last node in the list, come back one node and de-linke and delete the last node.
+            # Iterrate to the last node in the list, come back one node and de-link and delete the last node.
             while current_node.next is not None:
                 current_node = current_node.next
             new_tail_node = current_node.prev
@@ -150,9 +164,9 @@ class DoublyLinkedList:
             return
         # For every other node.
         else:
-            # Here next_node is the node next to the node that has to be deleted.
-            # Once we reach the node after which we have to delete a node(current_node), we delink the node to the deleted by making,
-            # connections between the current_node and the next_node.
+            # Here next_node is the node next to the node that has to be deleted. Once we reach the node after which
+            # we have to delete a node(current_node), we de-link the node to the deleted by making, connections
+            # between the current_node and the next_node.
             while current_node.next is not None:
                 next_node = current_node.next.next
                 if idx == index:
@@ -162,7 +176,6 @@ class DoublyLinkedList:
                 idx += 1
                 current_node = current_node.next
             return
-           
 
     '''
     Prints all the elements in the LinkedList.
@@ -179,6 +192,7 @@ class DoublyLinkedList:
             current_node = current_node.next
         print('null')
         print()
+
 
 if __name__ == "__main__":
     # Create a DoublyLinkedList Object
@@ -209,7 +223,7 @@ if __name__ == "__main__":
 
     print('---------------------------------------------------------------------')
     print('Length of LinkedList: ', str(doubly_linked_list.length()))
-    
+
     print('\n---------------------------------------------------------------------')
     print('Insert after index: ')
     index_ = int(input('Index: '))
